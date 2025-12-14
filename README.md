@@ -1,4 +1,4 @@
-ESP32 Keyword Recognition – Detailed Technical Documentation
+ESP32 Keyword Recognition :
 1. Project Overview
 
 This project presents a complete, production-oriented implementation of a keyword recognition system designed specifically for the ESP32 microcontroller platform. The objective is to detect short spoken commands in real time using a highly optimized neural network that operates directly on raw audio samples.
