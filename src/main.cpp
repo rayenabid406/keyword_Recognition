@@ -41,7 +41,6 @@ i2s_pin_config_t pin_config = {
 // Audio buffer for 1 second (16000 samples at 16kHz)
 int16_t audio_buffer[AUDIO_BUFFER_SIZE];
 
-// ================= SETUP =================
 void setup() {
     Serial.begin(9600);
     delay(3000);  // Wait for Serial Monitor
