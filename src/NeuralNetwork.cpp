@@ -5,13 +5,12 @@
 // Undefine conflicting Arduino macro BEFORE TensorFlow includes
 #undef DEFAULT
 
-// Use the COMPLETE ops resolver
 #include "tensorflow/lite/micro/all_ops_resolver.h"
 #include "tensorflow/lite/micro/micro_error_reporter.h"
 #include "tensorflow/lite/micro/micro_interpreter.h"
 #include "tensorflow/lite/schema/schema_generated.h"
 
-// Simple global instances
+//  global instances
 namespace {
 tflite::ErrorReporter* error_reporter = nullptr;
 const tflite::Model* model = nullptr;
@@ -65,7 +64,7 @@ NeuralNetwork::NeuralNetwork() {
     Serial.printf("EXPAND_DIMS operations: %d\n", expand_dims_count);
     Serial.printf("Unknown (code 70) operations: %d\n", unknown_count);
     
-    // 4. VERDICT
+    // 4. VERDICT (checks if my model changed (for me))
     Serial.println("\n=== VERDICT ===");
     if(unknown_count > 0 || expand_dims_count > 0) {
         Serial.println("❌ STILL OLD MODEL!");
