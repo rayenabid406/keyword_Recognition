@@ -5,7 +5,7 @@
 
 class NeuralNetwork {
 private:
-    // Tensor arena MUST be 16-byte aligned
+    // Tensor arena 16-byte aligned
     alignas(16) uint8_t tensor_arena[35000];
     
 public:
