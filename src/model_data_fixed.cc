@@ -1,5 +1,4 @@
-// AUTO-GENERATED FROM esp32_simple_model.tflite (79% accuracy)
-// Generated at: 2025-12-14 01:49:45.056490
+
 
 unsigned char NEW_MODEL_79_percent[] = {
     0x20, 0x00, 0x00, 0x00, 0x54, 0x46, 0x4c, 0x33, 0x00, 0x00, 0x00, 0x00,
